@@ -1,0 +1,240 @@
+:root {
+  --black: rgb(29, 29, 31);
+  --white: #f5f5f7;
+  --gray: #888;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Titillium Web", sans-serif;
+  width: 100%;
+  height: 100vh;
+  font-size: 14px;
+  color: var(--white);
+  background-color: var(--black);
+  margin-bottom: 20px;
+}
+
+/* Reset CSS */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+textarea,
+input {
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+}
+
+button:focus,
+button:active,
+input:focus,
+input:active,
+textarea:focus,
+textarea:active {
+  box-shadow: none;
+  outline: none;
+}
+
+ul,
+ol,
+li {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #2b292d;
+  letter-spacing: -0.01em;
+}
+
+/* Mobile */
+.main__title {
+  font-family: "Caveat", cursive;
+  font-size: 2.3rem;
+  text-align: center;
+  margin: 50px 0;
+}
+.sub__title {
+  display: flex;
+  justify-content: center;
+}
+.btn {
+  background-color: var(--gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  font-size: 1rem;
+  padding: 5px 15px;
+  margin-right: 10px;
+}
+.btn:hover {
+  background-color: #dda94b;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 240px;
+  gap: 30px;
+  margin: 50px;
+}
+
+.project {
+  color: var(--black);
+  background-color: var(--white);
+  font-size: 1.2rem;
+}
+
+.project__title {
+  padding: 10px;
+}
+
+.img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 150px;
+}
+
+.project__img1 {
+  background-image: url("https://s3.ap-northeast-2.amazonaws.com/bongbong/javascript30/images/small0.jpg");
+}
+.project__img2 {
+  background-image: url("https://s3.ap-northeast-2.amazonaws.com/bongbong/javascript30/images/small1.jpg");
+}
+.project__img3 {
+  background-image: url("https://s3.ap-northeast-2.amazonaws.com/bongbong/javascript30/images/small2.jpg");
+}
+.project__img4 {
+  background-image: url("https://s3.ap-northeast-2.amazonaws.com/bongbong/javascript30/images/small3.jpg");
+}
+.project__img5 {
+  background-image: url("https://s3.ap-northeast-2.amazonaws.com/bongbong/javascript30/images/small4.jpg");
+}
+.project__img6 {
+  background-image: url("https://s3.ap-northeast-2.amazonaws.com/bongbong/javascript30/images/small5.jpg");
+}
+.project__img7 {
+  background-image: url("https://s3.ap-northeast-2.amazonaws.com/bongbong/javascript30/images/small6.jpg");
+}
+.project__img8 {
+  background-image: url("https://s3.ap-northeast-2.amazonaws.com/bongbong/javascript30/images/small7.jpg");
+}
+.project__img9 {
+  background-image: url("https://s3.ap-northeast-2.amazonaws.com/bongbong/javascript30/images/small8.jpg");
+}
+.project__img10 {
+  background-image: url("https://s3.ap-northeast-2.amazonaws.com/bongbong/javascript30/images/small9.jpg");
+}
+.project__img11 {
+  background-image: url("https://s3.ap-northeast-2.amazonaws.com/bongbong/javascript30/images/small10.jpg");
+}
+.project__img12 {
+  background-image: url("https://s3.ap-northeast-2.amazonaws.com/bongbong/javascript30/images/small11.jpg");
+}
+.project__img13 {
+  background-image: url("https://s3.ap-northeast-2.amazonaws.com/bongbong/javascript30/images/small12.jpg");
+}
+.project__img14 {
+  background-image: url("https://s3.ap-northeast-2.amazonaws.com/bongbong/javascript30/images/small13.jpg");
+}
+.project__img15 {
+  background-image: url("https://s3.ap-northeast-2.amazonaws.com/bongbong/javascript30/images/small14.jpg");
+}
+.project__img16 {
+  background-image: url("https://s3.ap-northeast-2.amazonaws.com/bongbong/javascript30/images/small15.jpg");
+}
+.project__img17 {
+  background-image: url("https://s3.ap-northeast-2.amazonaws.com/bongbong/javascript30/images/small16.jpg");
+}
+.project__img18 {
+  background-image: url("https://s3.ap-northeast-2.amazonaws.com/bongbong/javascript30/images/small17.jpg");
+}
+.project__img19 {
+  background-image: url("https://s3.ap-northeast-2.amazonaws.com/bongbong/javascript30/images/small18.jpg");
+}
+.project__img20 {
+  background-image: url("https://s3.ap-northeast-2.amazonaws.com/bongbong/javascript30/images/small19.jpg");
+}
+.project__img21 {
+  background-image: url("https://s3.ap-northeast-2.amazonaws.com/bongbong/javascript30/images/small20.jpg");
+}
+.project__img22 {
+  background-image: url("https://s3.ap-northeast-2.amazonaws.com/bongbong/javascript30/images/small21.jpg");
+}
+.project__img23 {
+  background-image: url("https://s3.ap-northeast-2.amazonaws.com/bongbong/javascript30/images/small22.jpg");
+}
+.project__img24 {
+  background-image: url("https://s3.ap-northeast-2.amazonaws.com/bongbong/javascript30/images/small23.jpg");
+}
+.project__img25 {
+  background-image: url("https://s3.ap-northeast-2.amazonaws.com/bongbong/javascript30/images/small24.jpg");
+}
+.project__img26 {
+  background-image: url("https://s3.ap-northeast-2.amazonaws.com/bongbong/javascript30/images/small25.jpg");
+}
+.project__img27 {
+  background-image: url("https://s3.ap-northeast-2.amazonaws.com/bongbong/javascript30/images/small26.jpg");
+}
+.project__img28 {
+  background-image: url("https://s3.ap-northeast-2.amazonaws.com/bongbong/javascript30/images/small27.jpg");
+}
+.project__img29 {
+  background-image: url("https://s3.ap-northeast-2.amazonaws.com/bongbong/javascript30/images/small28.jpg");
+}
+.project__img30 {
+  background-image: url("https://s3.ap-northeast-2.amazonaws.com/bongbong/javascript30/images/small29.jpg");
+}
+
+footer {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--gray);
+  font-size: 1.1rem;
+}
+
+/* >= 768px (Desktop) */
+@media screen and (min-width: 768px) {
+  .main__title {
+    font-size: 3rem;
+  }
+  .btn {
+    font-size: 1.2rem;
+  }
+  .btn:hover {
+    background-color: #dda94b;
+  }
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 250px;
+    gap: 30px;
+    margin: 50px;
+  }
+  .project {
+    font-size: 1.3rem;
+    transition: transform 150ms ease-in;
+  }
+  .project:hover {
+    transform: scale(1.1);
+  }
+  footer {
+    height: 70px;
+    font-size: 1.3rem;
+  }
+}
