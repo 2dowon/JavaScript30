@@ -1,0 +1,48 @@
+:root {
+  --base: #ffc600;
+  --spacing: 10px;
+  --blur: 10px;
+}
+
+img {
+  padding: var(--spacing);
+  background: var(--base);
+  filter: blur(var(--blur));
+}
+
+.hl {
+  color: var(--base);
+}
+
+body {
+  text-align: center;
+  background: rgb(29, 29, 31);
+  color: white;
+  font-family: "helvetica neue", sans-serif;
+  font-weight: 100;
+  font-size: 40px;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+label {
+  margin-right: 10px;
+}
+
+input {
+  width: 100px;
+  margin-right: 30px;
+}
+
+#jsUpload {
+  display: none;
+}
+.upload i {
+  font-size: 40px;
+  margin-right: 20px;
+}

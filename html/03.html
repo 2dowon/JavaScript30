@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Scoped CSS Variables and JS</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <link rel="stylesheet" href="../css/03.css">
+</head>
+<body>
+  <h2>Update CSS Variables with <span class='hl'>JS</span></h2>
+
+  <div class="controls">
+    <div class="upload">
+      <label for="jsUpload">
+        Image
+        <i class="far fa-image"></i>
+      </label>
+      <input type="file" accept="image/*" id="jsUpload"/>
+    </div>
+    <label for="spacing">Spacing:</label>
+    <input id="spacing" type="range" name="spacing" min="10" max="200" value="10" data-sizing="px">
+    
+    <label for="blur">Blur:</label>
+    <input id="blur" type="range" name="blur" min="0" max="25" value="10" data-sizing="px">
+    
+    <label for="base">Base Color</label>
+    <input id="base" type="color" name="base" value="#ffc600">
+  </div>
+
+  <img src="https://source.unsplash.com/random/800x500" />
+
+  <script>
+    const inputs = document.querySelectorAll('.controls input');
+    const uploadBtn = document.querySelector("#jsUpload");
+
+    function handleUpdate() {
+      const suffix = this.dataset.sizing || '';
+      document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix);
+    }
+    
+    function readInputFile(event) {
+        const file = event.target.files;
+        const reader = new FileReader();
+        reader.onload = function (e) {
+            const newImg = new Image();
+            newImg.onload = function () {
+              img.src = newImg.src;
+              img.style.height = "70vh";
+            };
+            newImg.src = e.target.result;
+        };    
+        reader.readAsDataURL(file[0]);
+    }
+
+    inputs.forEach(input => input.addEventListener('change', handleUpdate));
+    inputs.forEach(input => input.addEventListener('mousemove', handleUpdate));
+    uploadBtn.addEventListener("change", readInputFile);
+
+  </script>
+
+</body>
+</html>
