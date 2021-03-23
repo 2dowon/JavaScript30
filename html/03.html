@@ -32,6 +32,7 @@
   <script>
     const inputs = document.querySelectorAll('.controls input');
     const uploadBtn = document.querySelector("#jsUpload");
+    const img = document.querySelector("img");
 
     function handleUpdate() {
       const suffix = this.dataset.sizing || '';
@@ -45,7 +46,7 @@
             const newImg = new Image();
             newImg.onload = function () {
               img.src = newImg.src;
-              img.style.height = "70vh";
+              img.style.height = "50vh";
             };
             newImg.src = e.target.result;
         };    
